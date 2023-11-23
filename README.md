@@ -40,4 +40,8 @@ Official implementation of Contrast-Guided Wireframe Parser (CGWP)
 | F-Clip      |   27.5   | **29.8** | **31.3** |   62.0   |   67.3   |
 | CGWP (Ours) | **27.6** |   29.7   | **31.3** | **62.9** | **68.3** |
 
+## Training Details
+
+We utilized almost the same training strastrategy as L-CNN, HAWP, and F-Clip. This includes using the Adam optimizer, a learning rate of 4e-4, and a weight decay of 1e-4. Our training lasted for 120 epochs, each with 5000 images. After the first 100 epochs, we lowered the learning rate to 10%. We followed the same steps for image enhancement as these models. The total loss is the weighted sum of the component losses.
+
 Our code will be released soon!
